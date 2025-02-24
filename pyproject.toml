@@ -1,0 +1,9 @@
+[project]
+name = "rssfilter"
+version = "0.1.0"
+description = "Simple script to filter an RSS feed."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "feedparser>=6.0.11",
+]
