@@ -28,6 +28,8 @@ jobs:
         python app.py
 
     - name: Commit and push changes
+      env:
+        PAT: ${{ secrets.PAT }}
       run: |
         cp feeds/*xml docs/
         git config --global user.name 'github-actions[bot]'
@@ -35,7 +37,7 @@ jobs:
         git add feeds/*
         git add docs/*
         git commit -m 'Update RSS feed'
-        git push
+        git push https://${{ env.PAT }}@github.com/jljarvi/rssfilter.git main
 
     - name: Send email notification
       env:
