@@ -37,7 +37,7 @@ jobs:
         git add feeds/*
         git add docs/*
         git commit -m 'Update RSS feed'
-        git push https://${{ env.PAT }}@github.com/jljarvi/rssfilter.git main
+        git push https://${{ secrets.PAT }}@github.com/jljarvi/rssfilter.git main
 
     - name: Send email notification
       env:
