@@ -1,9 +1,10 @@
+import os
 import feedparser
-from datetime import datetime
+from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
 
-def filter_and_save_rss(rss_url, output_file):
+def filter_and_save_rss(rss_url, output_folder):
     # Parse the RSS feed
     feed = feedparser.parse(rss_url)
 
@@ -22,7 +23,7 @@ def filter_and_save_rss(rss_url, output_file):
         "Original content is attributed to the respective authors."
     )
     ET.SubElement(channel, "language").text = "en-GB"
-    ET.SubElement(channel, "pubDate").text = datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S +0000')
+    ET.SubElement(channel, "pubDate").text = datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
 
     # Add a custom element for attribution
     attribution = ET.SubElement(channel, "attribution")
@@ -39,18 +40,23 @@ def filter_and_save_rss(rss_url, output_file):
         ET.SubElement(item, "description").text = entry.description
         ET.SubElement(item, "pubDate").text = entry.published
 
+    # Create the output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Define the output file path
+    output_file = os.path.join(output_folder, 'harper_dot_blog_posts_only.xml')
+
     # Write the filtered feed to an XML file
     tree = ET.ElementTree(rss)
     tree.write(output_file, encoding="utf-8", xml_declaration=True)
 
+    print(f"Filtered RSS feed saved to {output_file}.")
 
 # URL of the RSS feed
 rss_url = 'https://harper.blog/index.xml'
 
-# Output file path
-output_file = 'harper_dot_blog_filtered.xml'
+# Output folder path
+output_folder = 'feeds'
 
 # Filter and save the RSS feed
-filter_and_save_rss(rss_url, output_file)
-
-print(f"Filtered RSS feed saved to {output_file}.")
+filter_and_save_rss(rss_url, output_folder)
