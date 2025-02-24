@@ -36,10 +36,10 @@ jobs:
         cp feeds/*xml docs/
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git pull --rebase origin main  # Pull latest changes with rebase
         git add feeds/*
         git add docs/*
         git commit -m 'Update RSS feed'
+        git pull --rebase origin main  # Pull latest changes with rebase
         git push https://${{ secrets.PAT }}@github.com/jljarvi/rssfilter.git main
 
     - name: Send email notification
