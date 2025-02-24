@@ -1,0 +1,60 @@
+name: Update RSS Feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser
+
+    - name: Run filter script
+      run: |
+        python app.py
+
+    - name: Commit and push changes
+      run: |
+        mv feeds/*xml docs/
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add feeds/*
+        git add docs/*
+        git commit -m 'Update RSS feed'
+        git push
+
+    - name: Send email notification
+      env:
+        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+      run: |
+        python -m pip install sendgrid
+        python <<EOF
+        import sendgrid
+        from sendgrid.helpers.mail import Mail, Email, To, Content
+
+        sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
+        from_email = Email("admin@nfld.uk")
+        to_email = To("jljarvi@pm.me")
+        subject = "RSS Feed Updated"
+        content = Content("text/plain", "The RSS feed has been successfully updated.")
+        mail = Mail(from_email, to_email, subject, content)
+
+        response = sg.client.mail.send.post(request_body=mail.get())
+        print(response.status_code)
+        print(response.body)
+        print(response.headers)
+        EOF
