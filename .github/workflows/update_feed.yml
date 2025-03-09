@@ -2,7 +2,7 @@ name: Update RSS Feed
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    - cron: '5 7 * * *'  # Runs once a day
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.PAT }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -28,6 +30,8 @@ jobs:
         python app.py
 
     - name: Commit and push changes
+      env:
+        PAT: ${{ secrets.PAT }}
       run: |
         cp feeds/*xml docs/
         git config --global user.name 'github-actions[bot]'
@@ -35,7 +39,8 @@ jobs:
         git add feeds/*
         git add docs/*
         git commit -m 'Update RSS feed'
-        git push
+        git pull --rebase origin main  # Pull latest changes with rebase
+        git push https://${{ secrets.PAT }}@github.com/jljarvi/rssfilter.git main
 
     - name: Send email notification
       env:
@@ -43,6 +48,7 @@ jobs:
       run: |
         python -m pip install sendgrid
         python <<EOF
+        import os
         import sendgrid
         from sendgrid.helpers.mail import Mail, Email, To, Content
 
