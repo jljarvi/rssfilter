@@ -1,14 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Sat, 19 Apr 2025 07:21:05 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
+<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Sun, 20 Apr 2025 07:22:51 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
 &lt;p&gt;There has been an incredible amount of energy and interest in this topic. I have received a ton of emails from people who are working to figure all of this out. I started to notice that many people are struggling to figure out how to start, and how it all fits together. Then I realized that I have been hacking on this process since 2023 and I have seen some shit. Lol.&lt;/p&gt;
 &lt;p&gt;I was talking about this with friends (Fisaconites&amp;rsquo;s represent) and I sent this message in response to a thread about AI assisted agents, and editors:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;if i were starting out, i don&amp;rsquo;t know if it is helpful to jump right into the &amp;ldquo;agent&amp;rdquo; coders. It is annoying and weird. having walked a few people through this (successfully, and not successfully) I find that the &amp;ldquo;hero&amp;rsquo;s journey&amp;rdquo; of starting with the Copilot, moving to the copy and paste from Claude web, to the Cursor/continue, to the fully automated &amp;ldquo;agents&amp;rdquo; seems to be a successful way to adopt these things.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;if i were starting out, i don&amp;rsquo;t know if it is helpful to jump right into the &amp;ldquo;agent&amp;rdquo; coders. It is annoying and weird. having walked a few people through this (successfully, and not successfully) I find that the &amp;ldquo;hero&amp;rsquo;s journey&amp;rdquo; of starting with the Copilot, moving to the copy and paste from Claude web, to the Cursor/continue, to the fully automated &amp;ldquo;agents&amp;rdquo; seems to be a successful way to adopt these things.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This lead me to start thinking a lot about the journey and how to get started using agentic coding:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The caveat is that this is largely for people with experience. If you don’t have much dev experience, then fuck it - jump to the end. &lt;strong&gt;Our brains are often ruined by the rules of the past.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The caveat is that this is largely for people with experience. If you don’t have much dev experience, then fuck it - jump to the end. &lt;strong&gt;Our brains are often ruined by the rules of the past.&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id="a-journey-of-sight-and-sound"&gt;A journey of sight and sound&lt;/h2&gt;
 
 
@@ -73,8 +71,7 @@
 &lt;p&gt;This is the unfortunate first step towards the vibe in vibe coding. You will start to prefer how one of the big models talk to you. It is feelings tho. Kind of weird. You will find yourself thinking “I like how Claude makes me feel.”&lt;/p&gt;
 &lt;p&gt;Many developers seem to like Claude. I use both, but mostly Claude for code related things. The vibe with Claude is just better.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You have to pay for them to get the good stuff. So many friends are like “This is a piece of shit” and then you find out they are using a free model that barely works. Lol. This was more of an issue when the free version was ChatGPT 3.5, but make sure you are using a capable model before you throw the entire premise out.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;You have to pay for them to get the good stuff. So many friends are like “This is a piece of shit” and then you find out they are using a free model that barely works. Lol. This was more of an issue when the free version was ChatGPT 3.5, but make sure you are using a capable model before you throw the entire premise out.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id="you-will-start-thinking-about-how-to-make-things-go-faster"&gt;You will start thinking about how to make things go faster&lt;/h4&gt;
 &lt;p&gt;After copying and pasting code into Claude for a few weeks you are going to realize that this is annoying. You are going to start working through context packing, and trying to fit more of your code into the LLM context window.&lt;/p&gt;
 &lt;p&gt;You will experiment with &lt;a href="https://repomix.com/"&gt;repomix&lt;/a&gt;, &lt;a href="https://github.com/donoceidon/repo2txt"&gt;repo2txt&lt;/a&gt;, and other code context tools. Just so that you can slam your entire codebase into the Claude context window. There is a chance that you will even start writing shell scripts (well Claude will write them) to help make this process easier.&lt;/p&gt;
@@ -93,8 +90,7 @@
 &lt;h3 id="step-7-you-start-playing-with-aider-to-enable-quicker-loops"&gt;Step 7: You start playing with aider to enable quicker loops&lt;/h3&gt;
 &lt;p&gt;At this point you are ready to start getting into the &lt;strong&gt;good stuff&lt;/strong&gt;. The codegen previously required you to be involved, and paying attention. But it is 2025! Who wants to code with their fingers?&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;One other path that lots of friends are experimenting with is to code with your voice. To start instruct aider via a whisper client. It is hilarious and fun. MacWhisper is a very good tool for this locally. Aqua, and superwhisper are nice but cost more. They may use cloud services to do the inference. I prefer local.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;One other path that lots of friends are experimenting with is to code with your voice. To start instruct aider via a whisper client. It is hilarious and fun. MacWhisper is a very good tool for this locally. Aqua, and superwhisper are nice but cost more. They may use cloud services to do the inference. I prefer local.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Trying out aider is a wild experience. You start it up, it instantiates itself into your project. You put your query directly into aider, and it just kind of does what you asked. It asks for permission to act, and gives you a framework to get things done, and then acts. It completes the task, and the commits to your repository. You no longer are so worried about one shotting tasks. you will just have aider do it in a few steps.&lt;/p&gt;
 &lt;p&gt;You start building out rulesets for the LLM to follow. You learn about the “&lt;a href="https://www.reddit.com/r/cursor/comments/1joapwk/comment/mkqg8aw/"&gt;Big Daddy&lt;/a&gt;” rule, or the “no deceptions” addition to your prompts. You start be really good at prompting the robot.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It works.&lt;/strong&gt;&lt;/p&gt;
@@ -248,8 +244,7 @@
 &lt;p&gt;I took the transcript from granola, popped it into o1-pro, and asked it to write this blog post. Not terrible. Representative of my beliefs.&lt;/p&gt;
 &lt;p&gt;I sent it to a few friends, and they all were interested in sending it to a few more friends. That means I gotta publish it. So here goes!&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;this is a good reminder that if you get an email from someone and the writing is perfect and has no affectation - an AI probably wrote it. lol.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;this is a good reminder that if you get an email from someone and the writing is perfect and has no affectation - an AI probably wrote it. lol.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr /&gt;
 &lt;h2 id="waterfall-in-15-minutes-or-your-money-back"&gt;Waterfall in 15 Minutes or Your Money Back&lt;/h2&gt;
 &lt;h3 id="the-new-normal-why-does-code-quality-even-matter"&gt;The New Normal: &amp;ldquo;Why Does Code Quality Even Matter?&amp;rdquo;&lt;/h3&gt;
@@ -511,8 +506,7 @@ Here’s the idea:
 
 &lt;pre tabindex="0"&gt;&lt;code class="language-prompt"&gt;Now that we’ve wrapped up the brainstorming process, can you compile our findings into a comprehensive, developer-ready specification? Include all relevant requirements, architecture choices, data handling details, error handling strategies, and a testing plan so a developer can immediately begin implementation.&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will output a pretty solid and straightforward spec that can be handed off to the planning step. I like to save it as &lt;code&gt;spec.md&lt;/code&gt; in the repo.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You can use this spec for a number of things. We are doing codegen here, but I have used it to bolster ideas by asking a reasoning model to poke holes in the idea (must go deeper!), to generate a white paper, or to generate a business model. You can pop it into deep research and get a 10k word supporting document in return.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;You can use this spec for a number of things. We are doing codegen here, but I have used it to bolster ideas by asking a reasoning model to poke holes in the idea (must go deeper!), to generate a white paper, or to generate a business model. You can pop it into deep research and get a 10k word supporting document in return.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id="step-2-planning"&gt;Step 2: Planning&lt;/h3&gt;
 &lt;p&gt;Take the spec and pass it to a proper reasoning model (&lt;code&gt;o1*&lt;/code&gt;, &lt;code&gt;o3*&lt;/code&gt;, &lt;code&gt;r1&lt;/code&gt;):&lt;/p&gt;
 &lt;p&gt;(This is the TDD prompt)&lt;/p&gt;
@@ -575,8 +569,7 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 &lt;p&gt;The workflow is essentially the same as above but instead of pasting into claude, I am pasting the prompts into aider.&lt;/p&gt;
 &lt;p&gt;Aider will then “just do it” and I get to play &lt;a href="https://orteil.dashnet.org/cookieclicker/"&gt;cookie clicker&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;An aside: Aider does really great benchmarking of new models for codegen in their &lt;a href="https://aider.chat/docs/leaderboards/"&gt;LLM leaderboards&lt;/a&gt;. I find it to be a really great resource for seeing how effective new models are.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;An aside: Aider does really great benchmarking of new models for codegen in their &lt;a href="https://aider.chat/docs/leaderboards/"&gt;LLM leaderboards&lt;/a&gt;. I find it to be a really great resource for seeing how effective new models are.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Testing is nice with aider, because it can be even more hands off as aider will run the test suite and debug things for you.&lt;/p&gt;
 &lt;p&gt;The workflow is like this:&lt;/p&gt;
 &lt;ul&gt;
@@ -651,8 +644,7 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display: flex;"&gt;&lt;span&gt;LLM:generate_missing_tests  Generate missing tests &lt;span style="color: #66d9ef;"&gt;for&lt;/span&gt; code in repository content stored in output.txt using LLM generation
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display: flex;"&gt;&lt;span&gt;LLM:generate_readme         Generate README.md from repository content stored in output.txt using LLM generation&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I generate an &lt;code&gt;output.txt&lt;/code&gt; that has the context from my code base. If I am blowing through tokens, and it is too big - I will edit the generate command to ignore parts of the code base that are not germane to this task.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;One thing really nice about &lt;code&gt;mise&lt;/code&gt; is that the tasks can be redefined and overloaded in the working directory&amp;rsquo;s &lt;code&gt;.mise.toml&lt;/code&gt;. I can use a different tool to dump/pack the code, and as long as it generates an &lt;code&gt;output.txt&lt;/code&gt; I can use my LLM tasks. This is helpful when various codebases differ so much. I regularly override the &lt;code&gt;repomix&lt;/code&gt; step to include broader ignore patterns, or just use a more effective tool to do the packing.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;One thing really nice about &lt;code&gt;mise&lt;/code&gt; is that the tasks can be redefined and overloaded in the working directory&amp;rsquo;s &lt;code&gt;.mise.toml&lt;/code&gt;. I can use a different tool to dump/pack the code, and as long as it generates an &lt;code&gt;output.txt&lt;/code&gt; I can use my LLM tasks. This is helpful when various codebases differ so much. I regularly override the &lt;code&gt;repomix&lt;/code&gt; step to include broader ignore patterns, or just use a more effective tool to do the packing.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Once the output.txt is generated, I pass it to the &lt;a href="https://github.com/simonw/LLM"&gt;LLM&lt;/a&gt; command to do various transformations and then save those as a markdown file.&lt;/p&gt;
 &lt;p&gt;Ultimately, the mise task is running this: &lt;code&gt;cat output.txt | LLM -t readme-gen &amp;gt; README.md&lt;/code&gt; or &lt;code&gt;cat output.txt | LLM -m claude-3.5-sonnet -t code-review-gen &amp;gt; code-review.md&lt;/code&gt;. This isn&amp;rsquo;t super complicated. the &lt;code&gt;LLM&lt;/code&gt; command is doing the heavy lifting (supporting different models, saving keys, and using prompt templates).&lt;/p&gt;
 &lt;p&gt;For example, if I need a quick review and fix of test coverage I would do the following:&lt;/p&gt;
@@ -710,8 +702,7 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 &lt;p&gt;I find that using a &lt;strong&gt;planning step&lt;/strong&gt; (ala the Greenfield process above) can help keep things under control. At least you will have a doc you can double-check against. I also do believe that testing is helpful - especially if you are doing wild style aider coding. Helps keep things good, and tight.&lt;/p&gt;
 &lt;p&gt;Regardless, I still do find myself &lt;strong&gt;over my skis&lt;/strong&gt; quite a bit. Sometimes a quick break or short walk will help. In this regard it is a normal problem-solving process, but accelerated to a breakneck speed.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;We will often ask the LLM to include ridiculous things in our not very ridiculous code. For instance, we asked it to create a lore file and then reference the lore in the user interface. This is for python cli tools. Suddenly there is lore, glitchy interfaces, etc. All to manage your cloud functions, your todo list or whatever. The sky is the limit.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;We will often ask the LLM to include ridiculous things in our not very ridiculous code. For instance, we asked it to create a lore file and then reference the lore in the user interface. This is for python cli tools. Suddenly there is lore, glitchy interfaces, etc. All to manage your cloud functions, your todo list or whatever. The sky is the limit.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id="i-am-so-lonely-"&gt;I am so lonely (｡•́︿•̀｡)&lt;/h2&gt;
 &lt;p&gt;My main complaint about these workflows is that it is largely a solo endeavor - i.e. the interfaces are all &lt;em&gt;single player mode&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I have spent years coding by myself, years coding as a pair, and years coding in a team. It is always better with people. These workflows are not easy to use as a team. The bots collide, the merges are horrific, the context complicated.&lt;/p&gt;
