@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Tue, 22 Apr 2025 07:25:18 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
+<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Wed, 23 Apr 2025 07:28:52 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
 &lt;p&gt;There has been an incredible amount of energy and interest in this topic. I have received a ton of emails from people who are working to figure all of this out. I started to notice that many people are struggling to figure out how to start, and how it all fits together. Then I realized that I have been hacking on this process since 2023 and I have seen some shit. Lol.&lt;/p&gt;
 &lt;p&gt;I was talking about this with friends (Fisaconites&amp;rsquo;s represent) and I sent this message in response to a thread about AI assisted agents, and editors:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -31,12 +31,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Harper is very trustworthy" class="img  " height="" src="https://harper.blog/images/posts/journey-harper.webp" title="" width="" /&gt;
-      &lt;figcaption id="caption-Your thoughtful guide: Harper. iPhone X, 6/10/2018"&gt;
-        Your thoughtful guide: Harper. iPhone X, 6/10/2018
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Harper is very trustworthy" class="img " height="768" src="https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/journey-harper_hu_150720cd34953896.webp" title="" width="1024" /&gt;
+      
+        &lt;figcaption class="caption-Your-thoughtful-guide-Harper-iPhone-X-6102018" id="caption-Your thoughtful guide: Harper. iPhone X, 6/10/2018"&gt;
+          Your thoughtful guide: Harper. iPhone X, 6/10/2018
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -142,12 +200,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Confetti" class="img  " height="" src="https://harper.blog/images/posts/journey-confetti.webp" title="" width="" /&gt;
-      &lt;figcaption id="caption-Confetti at a Paul McCartney Concert at the Tokyo Dome. iPhone 6, 4/25/2015"&gt;
-        Confetti at a Paul McCartney Concert at the Tokyo Dome. iPhone 6, 4/25/2015
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Confetti" class="img " height="1024" src="https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/journey-confetti_hu_5c5b1e98a71e8689.webp" title="" width="1024" /&gt;
+      
+        &lt;figcaption class="caption-Confetti-at-a-Paul-McCartney-Concert-at-the-Tokyo-Dome-iPhone-6-4252015" id="caption-Confetti at a Paul McCartney Concert at the Tokyo Dome. iPhone 6, 4/25/2015"&gt;
+          Confetti at a Paul McCartney Concert at the Tokyo Dome. iPhone 6, 4/25/2015
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -169,6 +285,14 @@
 &lt;hr /&gt;
 &lt;p&gt;Thanks to Jesse, Sophie, the Vibez crew (Erik, Kanno, Braydon, and others), team 2389, and everyone else who gave me feedback on this post.&lt;/p&gt;
 
+                                &lt;figure&gt;
+                                    &lt;img alt="journey-confetti.webp" height="1024" src="https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/journey-confetti.webp" width="1024" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="journey-harper.webp" height="768" src="https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/journey-harper.webp" width="1024" /&gt;
+                                    
+                                &lt;/figure&gt;
                         
                         &lt;hr /&gt;
                         &lt;p&gt;Thank you for using RSS. I appreciate you. &lt;a href="mailto:harper&amp;#64;modest.com"&gt;Email me&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 17 Apr 2025 09:00:00 -0500</pubDate></item><item><title>Now @ 04-17-2025</title><link>https://harper.blog/now/2025-04-17/</link><description>&lt;h2 id="and-we-are-off"&gt;And we are off..&lt;/h2&gt;
@@ -276,12 +400,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Waterfall" class="img  " height="" src="https://harper.blog/images/posts/waterfall.webp" title="" width="" /&gt;
-      &lt;figcaption id="caption-Iceland has a lot of waterfalls. Leica Q, 9/30/2016"&gt;
-        Iceland has a lot of waterfalls. Leica Q, 9/30/2016
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Waterfall" class="img " height="1024" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall_hu_60c8753e36607622.webp" title="" width="1024" /&gt;
+      
+        &lt;figcaption class="caption-Iceland-has-a-lot-of-waterfalls-Leica-Q-9302016" id="caption-Iceland has a lot of waterfalls. Leica Q, 9/30/2016"&gt;
+          Iceland has a lot of waterfalls. Leica Q, 9/30/2016
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -371,12 +553,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Road to the future" class="img  " height="" src="https://harper.blog/images/posts/waterfall-road.webp" title="" width="" /&gt;
-      &lt;figcaption id="caption-Road to the future. Colorado is flat. Leica Q, 5/14/2016"&gt;
-        Road to the future. Colorado is flat. Leica Q, 5/14/2016
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Road to the future" class="img " height="576" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall-road_hu_b129af1fabf9cd2a.webp" title="" width="1024" /&gt;
+      
+        &lt;figcaption class="caption-Road-to-the-future-Colorado-is-flat-Leica-Q-5142016" id="caption-Road to the future. Colorado is flat. Leica Q, 5/14/2016"&gt;
+          Road to the future. Colorado is flat. Leica Q, 5/14/2016
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -392,6 +632,22 @@
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;What a funny world we live in. I think things are going to continue to get weird. Let&amp;rsquo;s dig in&lt;/em&gt;&lt;/p&gt;
 
+                                &lt;figure&gt;
+                                    &lt;img alt="waterfall-road.jpg" height="3357" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall-road.jpg" width="5972" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="waterfall-road.webp" height="576" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall-road.webp" width="1024" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="waterfall.jpg" height="3654" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall.jpg" width="3654" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="waterfall.webp" height="1024" src="https://harper.blog/2025/04/10/waterfall-in-15-minutes-or-your-money-back/waterfall.webp" width="1024" /&gt;
+                                    
+                                &lt;/figure&gt;
                         
                         &lt;hr /&gt;
                         &lt;p&gt;Thank you for using RSS. I appreciate you. &lt;a href="mailto:harper&amp;#64;modest.com"&gt;Email me&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 10 Apr 2025 00:00:00 -0500</pubDate></item><item><title>My LLM codegen workflow atm</title><link>https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/</link><description>&lt;p&gt;&lt;em&gt;tl:dr; Brainstorm spec, then plan a plan, then execute using LLM codegen. Discrete loops. Then magic. ✩₊˚.⋆☾⋆⁺₊✧&lt;/em&gt;&lt;/p&gt;
@@ -424,12 +680,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Juggalo Robot" class="img  " height="" src="https://harper.blog/images/posts/llm-coding-robot.webp" title="" width="" /&gt;
-      &lt;figcaption id="caption-I always find these AI-generated images to be suspect. Say hi to my juggalo coding robot angel!"&gt;
-        I always find these AI-generated images to be suspect. Say hi to my juggalo coding robot angel!
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Juggalo Robot" class="img " height="1024" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/llm-coding-robot_hu_335ed2f5f6cf3413.webp" title="" width="1024" /&gt;
+      
+        &lt;figcaption class="caption-I-always-find-these-AI-generated-images-to-be-suspect-Say-hi-to-my-juggalo-coding-robot-angel" id="caption-I always find these AI-generated images to be suspect. Say hi to my juggalo coding robot angel!"&gt;
+          I always find these AI-generated images to be suspect. Say hi to my juggalo coding robot angel!
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -472,12 +786,70 @@
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Green field" class="img  " height="" src="https://harper.blog/images/posts/greenfield.jpg" title="" width="" /&gt;
-      &lt;figcaption id="caption-Technically, there is a green field on the right. Leica Q, 5/14/2016"&gt;
-        Technically, there is a green field on the right. Leica Q, 5/14/2016
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Green field" class="img " height="3357" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/greenfield_hu_2ad06cc996dd8386.webp" title="" width="5972" /&gt;
+      
+        &lt;figcaption class="caption-Technically-there-is-a-green-field-on-the-right-Leica-Q-5142016" id="caption-Technically, there is a green field on the right. Leica Q, 5/14/2016"&gt;
+          Technically, there is a green field on the right. Leica Q, 5/14/2016
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -611,12 +983,70 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="a brown field" class="img  " height="" src="https://harper.blog/images/posts/brownfield.jpg" title="" width="" /&gt;
-      &lt;figcaption id="caption-This is not a green field. A random photo from my grandfather&amp;rsquo;s camera - somewhere in Uganda in the 60s"&gt;
-        This is not a green field. A random photo from my grandfather&amp;rsquo;s camera - somewhere in Uganda in the 60s
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="a brown field" class="img " height="2302" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/brownfield_hu_1c5e8f4c51a6a68a.webp" title="" width="2302" /&gt;
+      
+        &lt;figcaption class="caption-This-is-not-a-green-field-A-random-photo-from-my-grandfathers-camera---somewhere-in-Uganda-in-the-60s" id="caption-This is not a green field. A random photo from my grandfather&amp;rsquo;s camera - somewhere in Uganda in the 60s"&gt;
+          This is not a green field. A random photo from my grandfather&amp;rsquo;s camera - somewhere in Uganda in the 60s
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -733,12 +1163,70 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 
   
   
-    &lt;figure class=""&gt;
-      &lt;img alt="Printing" class="img  " height="" src="https://harper.blog/images/posts/apple-print-shop-printing.png" title="" width="" /&gt;
-      &lt;figcaption id="caption-I remember this like it was yesterday"&gt;
-        I remember this like it was yesterday
-      &lt;/figcaption&gt;
-    &lt;/figure&gt;
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Printing" class="img " height="457" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/apple-print-shop-printing_hu_279a40ac58332186.webp" title="" width="600" /&gt;
+      
+        &lt;figcaption class="caption-I-remember-this-like-it-was-yesterday" id="caption-I remember this like it was yesterday"&gt;
+          I remember this like it was yesterday
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
   
   
 
@@ -763,6 +1251,22 @@ Make sure and separate each prompt section. Use markdown. Each prompt should be 
 &lt;p&gt;If you are skeptical, but a bit curious - feel free to hit me up and let&amp;rsquo;s talk through all this madness. I can show you how we use LLMs, and maybe we could build something together.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;thanks to &lt;a href="https://derek.broox.com"&gt;Derek&lt;/a&gt;, &lt;a href="https://nocruft.com/"&gt;Kanno&lt;/a&gt;, &lt;a href="https://fsck.com"&gt;Obra&lt;/a&gt;, and &lt;a href="https://thinks.lol/"&gt;Erik&lt;/a&gt; for taking a look at this post and suggesting edits. I appreciate it.&lt;/em&gt;&lt;/p&gt;
 
+                                &lt;figure&gt;
+                                    &lt;img alt="apple-print-shop-printing.png" height="457" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/apple-print-shop-printing.png" width="600" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="brownfield.jpg" height="2302" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/brownfield.jpg" width="2302" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="greenfield.jpg" height="3357" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/greenfield.jpg" width="5972" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="llm-coding-robot.webp" height="1024" src="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/llm-coding-robot.webp" width="1024" /&gt;
+                                    
+                                &lt;/figure&gt;
                         
                         &lt;hr /&gt;
                         &lt;p&gt;Thank you for using RSS. I appreciate you. &lt;a href="mailto:harper&amp;#64;modest.com"&gt;Email me&lt;/a&gt;&lt;/p&gt;</description><pubDate>Sun, 16 Feb 2025 18:00:00 -0500</pubDate></item></channel></rss>
