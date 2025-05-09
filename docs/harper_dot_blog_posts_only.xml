@@ -1,5 +1,623 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Thu, 08 May 2025 07:25:41 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
+<rss version="2.0"><channel><title>Filtered: Harper Reed's Blog</title><link>https://harper.blog/</link><description>A filtered version of the feed from https://harper.blog/. Original content is attributed to the respective authors.</description><language>en-GB</language><pubDate>Fri, 09 May 2025 07:25:19 +0000</pubDate><attribution>This feed is a filtered version of the original feed available at https://harper.blog/. All content is attributed to the original author(s).</attribution><item><title>Basic Claude Code</title><link>https://harper.blog/2025/05/08/basic-claude-code/</link><description>&lt;p&gt;I really like this agentic coding thing. It is quite compelling in so many ways.&lt;/p&gt;
+&lt;p&gt;Since I wrote &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;that original blog post&lt;/a&gt; a lot has happened in Claude land:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Claude Code&lt;/li&gt;
+&lt;li&gt;MCP&lt;/li&gt;
+&lt;li&gt;etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have received hundreds (wat) of emails from people talking about their workflows and how they have used my workflow to get ahead. I have spoken at a few conferences, and taught a few classes about codegen. I have learned that computers really want to spellcheck codegen to codeine, who knew!&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      
+      
+          &lt;img alt="" class="img  " height="600" src="https://harper.blog/2025/05/08/basic-claude-code/codegen_hu_cd1d3b7ef861df7d.webp" title="" width="400" /&gt;
+      
+    
+
+  
+  
+
+
+
+
+
+
+  
+
+
+&lt;p&gt;I was talking to a &lt;a href="https://www.elidedbranches.com/"&gt;friend&lt;/a&gt; the other day about how we are &lt;strong&gt;all totally fucked&lt;/strong&gt; and &lt;strong&gt;AI will take our jobs&lt;/strong&gt; (more on that in a later post), and she was like &amp;ldquo;you should write a post about claude code.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Here we go.&lt;/p&gt;
+&lt;p&gt;Claude Code was released eight days after I wrote my original workflow blog post, and as I predicted, it made a lot of my post irrelevant. I have since migrated from Aider to Claude Code and not looked back. I still like Aider, and it has a distinct use, but Claude Code is a bit more useful atm.&lt;/p&gt;
+&lt;p&gt;Claude Code is powerful, and a hell of a lot more expensive.&lt;/p&gt;
+&lt;p&gt;My workflow is very similar to what it was before.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I chat with &lt;code&gt;gpt-4o&lt;/code&gt; to hone my idea&lt;/li&gt;
+&lt;li&gt;I use the best reasoning model I can find to generate the spec. These days it is o1-pro or o3 (is o1-pro better than o3? Or do I feel like it is better cuz it takes longer?)&lt;/li&gt;
+&lt;li&gt;I use the reasoning model to generate the prompts. Using an LLM to generate prompts is a beautiful hack. It makes boomers mad too.&lt;/li&gt;
+&lt;li&gt;I save the spec.md, and the prompt_plan.md in the root of the project.&lt;/li&gt;
+&lt;li&gt;I then type into claude code the following:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+&lt;pre tabindex="0"&gt;&lt;code class="language-prompt"&gt;1. Open **@prompt_plan.md** and identify any prompts not marked as completed.
+2. For each incomplete prompt:
+    - Double-check if it's truly unfinished (if uncertain, ask for clarification).
+    - If you confirm it's already done, skip it.
+    - Otherwise, implement it as described.
+    - Make sure the tests pass, and the program builds/runs
+    - Commit the changes to your repository with a clear commit message.
+    - Update **@prompt_plan.md** to mark this prompt as completed.
+3. After you finish each prompt, pause and wait for user review or feedback.
+4. Repeat with the next unfinished prompt as directed by the user.&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The magic with this prompt is that it checks the prompt plan. Looks for things that are not marked as completed, then does the next remaining task. It commits it to git, and then updates the prompt plan with what is complete. It then pops up and asks you to continue once it is done. 🤌&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I then kick back and tell claude &lt;code&gt;yes&lt;/code&gt; while it does the work. It will pop up for feedback, and magic happens.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lots more cookie clicker.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This works super well. There are a few superpowers you can embed in your process that will really help.&lt;/p&gt;
+&lt;h2 id="defensive-coding"&gt;Defensive coding!&lt;/h2&gt;
+&lt;h3 id="testing"&gt;Testing&lt;/h3&gt;
+&lt;p&gt;Testing and test-driven development is a must. I highly recommend really engaging in building out a robust TDD practice.&lt;/p&gt;
+&lt;p&gt;I was a TDD hater. I was bad at it and I felt like I was wasting time. I was not correct. Lol. I recognize that, and we built in a lot of testing into our companies and projects over the past few decades. Most of the testing was added AFTER the core work was done. This is fine for humans.&lt;/p&gt;
+&lt;p&gt;THIS IS BAD FOR ROBOTS.&lt;/p&gt;
+&lt;p&gt;The robots LOVE TDD. Seriously. They eat it up.&lt;/p&gt;
+&lt;p&gt;With TDD you have the robot friend build out the test, and the mock. Then your next prompt you build the mock to be real. And the robot just loves this. It is the most effective counter to hallucination and LLM scope drift I have found. It really helps the robots to stay on task.&lt;/p&gt;
+&lt;h3 id="linting"&gt;Linting&lt;/h3&gt;
+&lt;p&gt;I am such a fan of linting. It is so nice. Ruff is a wonderful product. Biome is cool. Clippy is fun (and a good name).&lt;/p&gt;
+&lt;p&gt;For whatever reason the ROBOTS love to run a good linter.&lt;/p&gt;
+&lt;p&gt;Building in the practice to run the linter constantly has kept a lot of bugs away, and kept the code more maintainable and easier to read. You know this already.&lt;/p&gt;
+&lt;p&gt;Add in a good formatter and everything is beautiful.&lt;/p&gt;
+&lt;h3 id="pre-commit-hooks"&gt;Pre Commit hooks&lt;/h3&gt;
+&lt;p&gt;The real magic of all this is to add these tasks to a pre-commit hook. I recommend the pre-commit python package. You can easily use it via an &lt;code&gt;uv tools install pre-commit&lt;/code&gt; command and then just build out a nice &lt;code&gt;.pre-commit-config.yaml&lt;/code&gt; file and bam. Every time you try and commit it will run all these wonderful tests, type checking, linting, and whatnot to make sure your code is A+++ would execute again.&lt;/p&gt;
+&lt;p&gt;This is a great hack for working with Claude Code. The robot REALLLLLY wants to commit. So when you instruct it to do some code and then commit (like I did above) it will make wild code changes, commit the code, inevitably fuck it all up and then have to fix it.&lt;/p&gt;
+&lt;p&gt;This is nice cuz it doesn&amp;rsquo;t clog your GitHub actions with a bunch of linting, formatting, and type checking execution that doesn&amp;rsquo;t pass cuz the robot was in a mood.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A funny thing about claude is it CANNOT for the life of it figure out how to use &lt;code&gt;uv&lt;/code&gt; correctly. It will pip install shit all over the place if you are not careful. And if you instruct it to use &lt;code&gt;uv&lt;/code&gt; it will just use &lt;code&gt;uv pip install.&lt;/code&gt; Maybe AGI isn&amp;rsquo;t going to happen in June. so sad.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="claudemd-and-commands"&gt;Claude.md and commands&lt;/h3&gt;
+&lt;p&gt;These are both really simple additions that can squeeze a lot out.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="Jesse at the studio, Sept 15, 2023, Ricoh GRiii" class="img " height="2000" src="https://harper.blog/2025/05/08/basic-claude-code/_SDI8149_hu_1c5b96d1b81c0f85.webp" title="" width="2000" /&gt;
+      
+        &lt;figcaption class="caption-Jesse-at-the-studio-Sigma-fp-11152023" id="caption-Jesse at the studio, Sigma fp, 11/15/2023"&gt;
+          Jesse at the studio, Sigma fp, 11/15/2023
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
+  
+  
+
+
+
+
+
+
+
+&lt;p&gt;I stole a &lt;a href="https://github.com/harperreed/dotfiles/blob/master/.claude/CLAUDE.md"&gt;CLAUDE.md&lt;/a&gt; from my friend &lt;a href="https://fsck.com/"&gt;Jesse Vincent&lt;/a&gt; who did an &lt;a href="https://github.com/obra/dotfiles/blob/main/.claude/CLAUDE.md"&gt;awful lot of work on making it very robust&lt;/a&gt;. It is quite nice. Some things that are built into it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a light version of the big daddy rule.&lt;/li&gt;
+&lt;li&gt;instructions on how to do TDD&lt;/li&gt;
+&lt;li&gt;stylistic instructions on how I like to code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://instagram.com/clintecker"&gt;@clint&lt;/a&gt; configured his CLAUDE.md to call him MR BEEF and it is currently embedding info about MR BEEF in our all documentation: &amp;ldquo;If you&amp;rsquo;re stuck, stop and ask for help—MR BEEF may know best.&amp;rdquo;. While typing this out, I decided to make my CLAUDE.md file call me &amp;ldquo;Harp Dog.&amp;rdquo; This is a feature, not a bug.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The commands are also really nice. You can see some of mine in my dotfiles &lt;a href="https://github.com/harperreed/dotfiles/tree/master/.claude/commands"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      
+      
+          &lt;img alt="" class="img  " height="500" src="https://harper.blog/2025/05/08/basic-claude-code/commands_hu_1e455eb8ce61f4a0.webp" title="" width="814" /&gt;
+      
+    
+
+  
+  
+
+
+
+
+
+
+
+&lt;p&gt;I used to use the commands way more, but it is a really great way to get a lot out of regularly used prompts. You can also pass arguments to the commands. For instance in my github issues command, you pass the issue number that you want claude to look at: &lt;code&gt;/user:gh-issue #45&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Claude will now go and run through the &amp;ldquo;prompt&amp;rdquo; script that is defined in the &lt;code&gt;gh-issue.md&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;You can also put these commands in a project directory, and make a custom CLAUDE.md in the project directory. I do this to make hugo, rust, go, or javascript specific commands per project.&lt;/p&gt;
+&lt;h2 id="continue"&gt;&amp;ldquo;Continue&amp;rdquo;&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    &lt;img alt="" class="img   " height="" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDk3ZTZpdWYwdG5sdmpnaTJqNzJhYXlvcmp6bnNmdmhxaGdoeHJ4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Je3fIeeXyYEM85G/giphy.gif" title="" width="" /&gt;
+  
+  
+
+
+
+
+
+
+
+&lt;p&gt;Sometimes I feel like that bird that home got to hit &amp;ldquo;y&amp;rdquo;. I am just writing &amp;ldquo;continue&amp;rdquo; or pressing up and pasting in the same prompt.&lt;/p&gt;
+&lt;p&gt;Most of the time the plans are about 8–12 steps. I can usually get through a Greenfield development plan in about 30–45 minutes regardless of apparent complexity or language.&lt;/p&gt;
+&lt;p&gt;I was talking through with my friend Bob and he did not believe it. I asked him &amp;ldquo;name a thing to build, a language to build it in - and let&amp;rsquo;s see!&amp;rdquo;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      &lt;figure class=""&gt;
+      
+          &lt;img alt="" class="img " height="4000" src="https://harper.blog/2025/05/08/basic-claude-code/R0000693_hu_5416e912274e26ae.webp" title="" width="5000" /&gt;
+      
+        &lt;figcaption class="caption-Bob-Swartz-Ricoh-GRiiix-11172024" id="caption-Bob Swartz, Ricoh GRiiix, 11/17/2024"&gt;
+          Bob Swartz, Ricoh GRiiix, 11/17/2024
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    
+
+  
+  
+
+
+
+
+
+
+
+&lt;p&gt;He was like &amp;ldquo;ok. A basic interpreter in C.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This wasn&amp;rsquo;t ideal. I don&amp;rsquo;t know C. I don&amp;rsquo;t really know how to write an interpreter, nor do I really want to. But fuck it.&lt;/p&gt;
+&lt;p&gt;I followed the above steps and Claude Code did great. We have &lt;a href="https://github.com/harperreed/basic"&gt;a working basic interpreter&lt;/a&gt;. The first version worked within an hour. I futzed with it for a few more hours and it is pretty good. Would it ship it in 1982? Probably not. You can see the &lt;a href="https://raw.githubusercontent.com/harperreed/basic/refs/heads/main/docs/prompt_plan.md"&gt;prompt plan here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="the-team"&gt;The Team&lt;/h2&gt;
+&lt;p&gt;Our entire team is using Claude Code currently. We are all approximately following the above process with a lot of person tweaks.&lt;/p&gt;
+&lt;p&gt;We are doing way way higher test coverage than we have ever done. We have better code, and it seems to be just as effective as the horrible code we wrote in the past. It is fun to glance at people working and see claude code running in ghostty, in vscode terminal, in zed terminal, and messing with python notebooks.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+  
+    
+    
+      
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+    
+
+
+    
+    
+      
+      
+
+      
+
+
+      
+
+      
+      
+        
+        
+        
+      
+      
+      
+      
+
+    
+    
+
+    
+    
+      
+      
+          &lt;img alt="" class="img  " height="330" src="https://harper.blog/2025/05/08/basic-claude-code/dril_hu_7b512dcb18505a6c.webp" title="" width="505" /&gt;
+      
+    
+
+  
+  
+
+
+
+
+
+
+
+&lt;p&gt;Someone who has a lot of tokens, please help me budget this. My family is dying.&lt;/p&gt;
+&lt;h2 id="thanks"&gt;thanks&lt;/h2&gt;
+&lt;p&gt;To all the folks who keep emailing me. It is really fun and nice to hear about your workflows, and projects. I really appreciate it. Keep em coming!&lt;/p&gt;
+
+                                &lt;figure&gt;
+                                    &lt;img alt="R0000693.jpeg" height="4000" src="https://harper.blog/2025/05/08/basic-claude-code/R0000693.jpeg" width="5000" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="_SDI8149.jpg" height="2000" src="https://harper.blog/2025/05/08/basic-claude-code/_SDI8149.jpg" width="2000" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="codegen.png" height="600" src="https://harper.blog/2025/05/08/basic-claude-code/codegen.png" width="400" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="commands.png" height="500" src="https://harper.blog/2025/05/08/basic-claude-code/commands.png" width="814" /&gt;
+                                    
+                                &lt;/figure&gt;
+                                &lt;figure&gt;
+                                    &lt;img alt="dril.jpg" height="330" src="https://harper.blog/2025/05/08/basic-claude-code/dril.jpg" width="505" /&gt;
+                                    
+                                &lt;/figure&gt;
+                        
+                        &lt;hr /&gt;
+                        &lt;p&gt;Thank you for using RSS. I appreciate you. &lt;a href="mailto:harper&amp;#64;modest.com"&gt;Email me&lt;/a&gt;&lt;/p&gt;</description><pubDate>Thu, 08 May 2025 00:00:00 -0500</pubDate></item><item><title>An LLM Codegen Hero's Journey</title><link>https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/</link><description>&lt;p&gt;I have spent a lot of time since my &lt;a href="https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/"&gt;blog post&lt;/a&gt; about my LLM workflow talking to folks about codegen and how to get started, get better, and why it is interesting.&lt;/p&gt;
 &lt;p&gt;There has been an incredible amount of energy and interest in this topic. I have received a ton of emails from people who are working to figure all of this out. I started to notice that many people are struggling to figure out how to start, and how it all fits together. Then I realized that I have been hacking on this process since 2023 and I have seen some shit. Lol.&lt;/p&gt;
 &lt;p&gt;I was talking about this with friends (Fisaconites&amp;rsquo;s represent) and I sent this message in response to a thread about AI assisted agents, and editors:&lt;/p&gt;
 &lt;blockquote&gt;
